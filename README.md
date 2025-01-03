@@ -49,3 +49,4 @@ Dar um fork no projeto, clonar o repositório em sua máquina local e criar um b
 •	Bom uso de context api ou outro gerenciamento de estados
 
 Boa sorte!
+
