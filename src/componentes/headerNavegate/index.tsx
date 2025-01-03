@@ -25,11 +25,10 @@ const HeaderNavegate: React.FC = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [favorites, setFavorites] = useState<Product[]>([]);
-  const [input, setInput] = useState('');
+
   const navigate = useNavigate();
   const onSearch = (searchText: string) => {
     console.log("Pesquisando:", searchText);
-    setInput(searchText);
     searchByText(searchText);
   };
   const toggleDrawer = () => {

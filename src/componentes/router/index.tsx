@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from '../main/index.tsx';
-import Header from '../headerNavegate/index.tsx';
 import ShoppingCart from '../shoppingCart/index.tsx';
 import Footer from '../footer/index.tsx';
 import HomePage from '../home/index.tsx';

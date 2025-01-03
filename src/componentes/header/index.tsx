@@ -19,29 +19,17 @@ import SellIcon from '@mui/icons-material/Sell';
 
 
 const Header: React.FC = () => {
-  const { listFavorits, changeFavorite, searchByText } = useProducts()
+  const { listFavorits, changeFavorite } = useProducts()
   const [value, setValue] = useState(0);
-  const [showSearch, setShowSearch] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [favorites, setFavorites] = useState<Product[]>([]);
-  const [input, setInput] = useState('');
   const navigate = useNavigate();
-  const onSearch = (searchText: string) => {
-    console.log("Pesquisando:", searchText);
-    setInput(searchText);
-    searchByText(searchText);
-  };
+
   const toggleDrawer = () => {
     setFavorites(listFavorits())
     setOpenDrawer(!openDrawer);
   };
-  const handleSearchClick = () => {
-    setShowSearch((prev) => !prev);
-  };
-  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const searchText = event.target.value;
-    onSearch(searchText);
-  };
+
   const handleFavoriteToggle = (product: Product) => {
     changeFavorite(product.id);
     setFavorites(listFavorits())
@@ -110,12 +98,12 @@ const Header: React.FC = () => {
         </Drawer>
       </HeaderWrapper>
 
-      {input.length == 0 ? <HeroSection>
+    <HeroSection>
         <Title>Encontre Tudo o que Você Precisa!</Title>
         <Subtitle>
             Na nossa loja, você encontra uma variedade incrível de produtos para todos os gostos e necessidades.
         </Subtitle>
-      </HeroSection> : <></>}
+      </HeroSection>
     </PageWrapper>
   );
 };
