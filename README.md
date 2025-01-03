@@ -1,7 +1,7 @@
 # Lara Fashion Wear
 
 **Sistema de e-commerce**  
-Link do projeto: [https://hiring-front-ocvat852r-laras-projects-10daea03.vercel.app/main](https://hiring-front-ocvat852r-laras-projects-10daea03.vercel.app/)
+Link do projeto: [https://hiring-front-ocvat852r-laras-projects-10daea03.vercel.app/](https://hiring-front-ocvat852r-laras-projects-10daea03.vercel.app/)
 
 ## 📄 Desafio Técnico: E-commerce
 
