@@ -1,26 +1,53 @@
+# Lara Fashion Wear
 
-## Objetivo
-Construir uma aplicação web em ReactJS que tenha o comportamento de um e-commerce.
+**Sistema de e-commerce**  
+Link do projeto: 
 
-## Como começar
-Dar um fork no projeto, clonar o repositório em sua máquina local e criar um branch novo para o seu código.
+## 📄 Desafio Técnico: E-commerce
+
+**Visão Geral**:  
+Desafio proposto pelo VNW
+
+**Requisitos Funcionais**:  
+- Exibir a listagem de produtos da API na página inicial.
+- Implementar pesquisa de produtos, trazendo apenas os resultados digitados.
+- Permitir adicionar produtos ao carrinho de compras.
+- Possibilitar remoção de produtos do carrinho.
+- Exibir o total da compra no carrinho.
+
+---
+
+## 📁 Estrutura do Projeto
+
+**Páginas**:  
+- **Home**: Exibe um banner e lista de produtos e tendências.
+- **Produtos**: Lista todos os produtos.
+- **Favoritos**:  Lista todos os produtos favoritados.
+- **Carrinho**: Exibe os produtos do carrinho, permite alterar quantidade, excluir itens e finalizar a compra. 
+
+---
+
+## Tecnologias
 
 
-## Regras de negócio
-•	Ao acessar a home, trazer a listagem de produtos vinda da API de referência.  
+---
 
-•	Ao digitar no campo de busca, deve-se trazer somente os resultados digitados.  
+##  Requisitos
 
-•	Ao clicar no botão "Adicionar ao carrinho", deve-se inserir o produto ao carrinho de compras.  
+Para iniciar, instale-se o **Node.js** estão instalados.
 
-•	No carrinho de compras, pode-se remover os produtos.  
+1. **Clone este projeto**:
 
-•	No carrinho de compras, deve-se informar o total da compra.
+   ```bash
+   git clone https://github.com/seu-usuario/hiring-front-end.git
+   cd desafio-lara
 
+2. **Instalando todas as dependencias do projeto**:
 
-## Referências
-•	API de produtos: https://62d742f351e6e8f06f1a83da.mockapi.io/api/produtos
+   ```bash
+   npm install
 
+3. **Para iniciar o projeto**:
 
 ## Observações
 1. Não é necessário se preocupar com CORS ou implementar um backend para fazer as requisições. A API de produtos permite chamadas diretas do navegador.
