@@ -1,7 +1,7 @@
 # Lara Fashion Wear
 
 **Sistema de e-commerce**  
-Link do projeto: 
+Link do projeto: https://hiring-front-ocvat852r-laras-projects-10daea03.vercel.app/main
 
 ## 📄 Desafio Técnico: E-commerce
 
@@ -28,19 +28,28 @@ Desafio proposto pelo VNW
 ---
 
 ## Tecnologias
+- React 
+- TypeScript
+- Node
+- Vite
+- Style Component
+- Material UI
+- Use context
+- Fetch
+- React router
 
 
 ---
 
 ##  Requisitos
 
-Para iniciar, instale-se o **Node.js** estão instalados.
+Para iniciar, instale-se o **Node.js**.
 
 1. **Clone este projeto**:
 
    ```bash
    git clone https://github.com/seu-usuario/hiring-front-end.git
-   cd desafio-lara
+   git switch desafio-lara
 
 2. **Instalando todas as dependencias do projeto**:
 
@@ -48,32 +57,5 @@ Para iniciar, instale-se o **Node.js** estão instalados.
    npm install
 
 3. **Para iniciar o projeto**:
-
-## Observações
-1. Não é necessário se preocupar com CORS ou implementar um backend para fazer as requisições. A API de produtos permite chamadas diretas do navegador.
-
-2. Design de livre escolha.
-
-
-## Requisitos Técnicos para a entrega do teste
-
-•	Pode utilizar qualquer library de CSS e CSS-in-JS. (recomendamos Material UI, Bootstrap ou Styled Components. Pode fazer com CSS clássico também)
-
-•	O projeto deve ter uma documentação em readme ensinando a: 
-1. instalar o projeto na máquina (engines, versão de node, qual gerenciador de pacote usar)
-2. instalar as dependências do projeto
-3. rodar o ambiente de desenvolvimento
-4. rodar a build de deploy da aplicação.
-
-•	Pode utilizar tanto o Axios quanto ou Fetch para requisições.
-
-•	Hospedar o projeto em um servidor (Heroku, Vercel, Netlify)
-
-## Diferenciais técnicos
-
-•	Utilização de typescript
-
-•	Bom uso de context api ou outro gerenciamento de estados
-
-Boa sorte!
-
+   ```bash
+   npm rum dev
