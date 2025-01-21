@@ -19,8 +19,11 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-    <ProductProvider>
+    <ProductProvider> 
+      {/* Tudo aqui dentro é um children do productProvider (pai dele) e com isso 
+      o filho pode acessar todas as variáveis e funções expostas do context em qualquer filho (páginas)*/}
       <GlobalStyle />
+      {/* Passa o router aqui para navegação */}
       <BrowserRouter>
         <Routes >
         <Route path="/" element={

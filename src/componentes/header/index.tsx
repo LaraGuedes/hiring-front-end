@@ -19,20 +19,23 @@ import SellIcon from '@mui/icons-material/Sell';
 
 
 const Header: React.FC = () => {
-  const { listFavorits, changeFavorite } = useProducts()
+  const { listFavorits, changeFavorite } = useProducts() //Pego as funções dentro do useProducts
+  // const use = useProducts();
+  // use.listFavorits()
+
   const [value, setValue] = useState(0);
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [favorites, setFavorites] = useState<Product[]>([]);
-  const navigate = useNavigate();
+  const [favorites, setFavorites] = useState<Product[]>([]); //toda vez que dou um set ele recria toda lista
+  const navigate = useNavigate(); //Navegação do react
 
   const toggleDrawer = () => {
-    setFavorites(listFavorits())
-    setOpenDrawer(!openDrawer);
+    setFavorites(listFavorits()) //Toda vez que abre os favoritos atualiza a lista
+    setOpenDrawer(!openDrawer); //Abre ou fecha a gaveta, muda o useState
   };
 
   const handleFavoriteToggle = (product: Product) => {
-    changeFavorite(product.id);
-    setFavorites(listFavorits())
+    changeFavorite(product.id); //Passa o id do produto que eu cliquei dentro dos favoritos
+    setFavorites(listFavorits()) //Atualiza a lista
   };
 
 

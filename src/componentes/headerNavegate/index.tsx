@@ -27,21 +27,32 @@ const HeaderNavegate: React.FC = () => {
   const [favorites, setFavorites] = useState<Product[]>([]);
 
   const navigate = useNavigate();
-  const onSearch = (searchText: string) => {
-    console.log("Pesquisando:", searchText);
-    searchByText(searchText);
-  };
+
+ 
+
   const toggleDrawer = () => {
     setFavorites(listFavorits())
     setOpenDrawer(!openDrawer);
   };
+
+  // para mostrar o input da pesquisa
   const handleSearchClick = () => {
     setShowSearch((prev) => !prev);
   };
-  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const searchText = event.target.value;
-    onSearch(searchText);
+
+   // Pesquisa
+   const onSearch = (searchText: string) => {
+    console.log("Pesquisando:", searchText);
+    searchByText(searchText); // Passa o texto digitado para a função filtrar
   };
+
+  // Chama a função da pesquisa
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const searchText = event.target.value; //Pega o texto e atribui a variável
+    onSearch(searchText); //Passa para a função de cima pesquisar no context
+  };
+
+
   const handleFavoriteToggle = (product: Product) => {
     changeFavorite(product.id);
     setFavorites(listFavorits())

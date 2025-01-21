@@ -10,7 +10,15 @@ const ShoppingCart: React.FC = () => {
   const { listCart, changeQuantityInCard } = useProducts()
   const [totally, setTotally] = useState<number>(0)
 
+  // Reduce:
+  // let sum = 0
+  // for (let index = 0; index < listCart().length; index++) {
+  //   const product = listCart()[index];
+  //   sum = sum + (product.price * product.quantityInCard)
+  // }
+  // return sum
 
+  // Soma o valor total
   useEffect(() => {
     setTotally(listCart().reduce((sum, product) => sum + (product.price * product.quantityInCard), 0))
   }, [listCart, changeQuantityInCard])

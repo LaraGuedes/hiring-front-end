@@ -8,9 +8,11 @@ import { Container} from './style';
 const HomePage = () => {
     const { products, loadingProducts } = useProducts()
 
+    // UseEffect - verifica se tem algo no colchete ou executa uma vez só quando for carregado
     useEffect(() => {
-        loadingProducts()
+        loadingProducts() //Tras os produtos
     }, [])
+
     return (
         <Box sx={{ fontFamily: 'Roboto, sans-serif' }}>
 

@@ -11,13 +11,18 @@ import { Product, useProducts } from "../../contexts/productsContext";
 
 const Main: React.FC = () => {
   const { orderBy, changeFavorite, products, loadingProducts, changeQuantityInCard } = useProducts()
+
+  // Organiza os produtos na tela conforme for passado
   const handleChange = (event: SelectChangeEvent) => {
     orderBy(event.target.value.toString());
-
   };
+
+  // Pega o id do produto que cliquei no botão favoritos e favorita
   const handleFavoriteToggle = (id: string) => {
     changeFavorite(id);
   };
+
+  // Pega o id de quando cliquei oara adicionar no carrinho e adiciona no carrinho
   const handleAddInCardToggle = (product: Product) => {
     changeQuantityInCard(product.id, 1);
   };

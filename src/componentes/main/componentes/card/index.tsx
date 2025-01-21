@@ -18,12 +18,18 @@ interface MediaCardProps {
 
 const MediaCard: React.FC<MediaCardProps> = ({ product, onFavoriteToggle, onAddToCardToggle }) => {
   const [isModalOpen, setModalOpen] = React.useState<boolean>(false);
+
+  // Chama a função para favoritar o produto
   const handleFavoriteToggle = () => {
     onFavoriteToggle(product);
   };
+
+  // Chama a função para adicionar o carrinho
   const handleAddToCard = () => {
     onAddToCardToggle(product);
   };
+
+  // Abre o modal de informação
   const handleModalOpen = () => setModalOpen(true);
   const handleModalClose = () => setModalOpen(false);
 
